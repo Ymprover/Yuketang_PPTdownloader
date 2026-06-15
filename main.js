@@ -38,7 +38,7 @@
                 canvas.height = img.height;
                 const ctx = canvas.getContext("2d");
                 ctx.drawImage(img, 0, 0);
-                // 转成 jpeg 二进制数据
+                
                 const data = atob(
                     canvas.toDataURL("image/jpeg").slice("data:image/jpeg;base64,".length)
                 );
